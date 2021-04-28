@@ -1,0 +1,6 @@
+- name: ensure apache is at the latest version
+  package:
+    name: apache2
+    state: latest
+  notify: start apache
+  tags: installation

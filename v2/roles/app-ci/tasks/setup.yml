@@ -1,0 +1,20 @@
+# Symlinks
+- name: sym-linking app
+  command: ln -fs /var/www/foodres.org/public /var/www/foodres
+
+# folder permissions
+- name: make app folder usable - 0755
+  file:
+    dest: /var/www/
+    state: directory
+    owner: www-data
+    group: www-data
+    mode: 0755
+    
+- name: make storage folder writable
+  command: chmod -R a+rw /var/www/foodres.org/storage
+
+- name: reload apache
+  service:
+    name: apache2
+    state: reloaded

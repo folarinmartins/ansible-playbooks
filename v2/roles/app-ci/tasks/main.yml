@@ -1,0 +1,5 @@
+---
+# tasks file for roles/app
+
+- include: deployy.yml
+- include: setup.yml

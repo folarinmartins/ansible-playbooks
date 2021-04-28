@@ -1,0 +1,25 @@
+- name: deploy app 
+  copy:
+    src: path/to/build/folder
+    dest: /path/to/remote/deploy/folder/
+    owner: www-data
+    mode: 0755
+
+- name: Synchronize app directory
+  synchronize:
+    src: path/to/build/folder
+    dest: /path/to/remote/deploy/folder/app
+    mode: push
+    use_ssh_args: yes
+    rsync_path: rsync
+    rsync_opts:
+      - "-azP"
+      - "--no-motd"
+      - "--exclude=.git"
+      - "--delete"
+      - "--backup"
+      - "--backup-dir=/etc/bk"
+      - "--exclude=sessions/*.*"
+        
+  # rsync -azP --exclude="session/*" path/to/build/folder/ root@${FDR_PROD}:/path/to/remote/deploy/folder/
+  # rsync -azP --exclude="session/*" --exclude=".git" path/to/build/folder/ root@${FDR_PROD}:/var/www/foodres.org/

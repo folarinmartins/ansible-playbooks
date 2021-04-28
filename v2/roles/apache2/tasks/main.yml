@@ -1,0 +1,5 @@
+---
+# tasks file for roles/webservers
+- include: install.yml
+- include: modules.yml
+- include: setup.yml

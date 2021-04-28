@@ -1,0 +1,1115 @@
+192.168.8.100 | SUCCESS => {
+    "ansible_facts": {
+        "ansible_all_ipv4_addresses": [
+            "192.168.8.100"
+        ],
+        "ansible_all_ipv6_addresses": [
+            "fe80::2ef6:4817:b8ab:d042",
+            "fe80::5482:eb4a:c2ee:92e"
+        ],
+        "ansible_apparmor": {
+            "status": "enabled"
+        },
+        "ansible_architecture": "x86_64",
+        "ansible_bios_date": "12/01/2006",
+        "ansible_bios_version": "VirtualBox",
+        "ansible_cmdline": {
+            "BOOT_IMAGE": "/vmlinuz-5.4.0-26-generic",
+            "quiet": true,
+            "ro": true,
+            "root": "UUID=3b87d941-8ee7-4312-98fc-1f26828d62ab",
+            "splash": true
+        },
+        "ansible_date_time": {
+            "date": "2021-04-28",
+            "day": "28",
+            "epoch": "1619616984",
+            "hour": "09",
+            "iso8601": "2021-04-28T13:36:24Z",
+            "iso8601_basic": "20210428T093624043444",
+            "iso8601_basic_short": "20210428T093624",
+            "iso8601_micro": "2021-04-28T13:36:24.043574Z",
+            "minute": "36",
+            "month": "04",
+            "second": "24",
+            "time": "09:36:24",
+            "tz": "EDT",
+            "tz_offset": "-0400",
+            "weekday": "Wednesday",
+            "weekday_number": "3",
+            "weeknumber": "17",
+            "year": "2021"
+        },
+        "ansible_default_ipv4": {
+            "address": "192.168.8.100",
+            "alias": "enp0s8",
+            "broadcast": "192.168.8.255",
+            "gateway": "192.168.8.1",
+            "interface": "enp0s8",
+            "macaddress": "08:00:27:c7:21:b3",
+            "mtu": 1500,
+            "netmask": "255.255.255.0",
+            "network": "192.168.8.0",
+            "type": "ether"
+        },
+        "ansible_default_ipv6": {},
+        "ansible_device_links": {
+            "ids": {
+                "sda": [
+                    "ata-VBOX_HARDDISK_VBd6cd75ee-fb61c27a"
+                ],
+                "sda1": [
+                    "ata-VBOX_HARDDISK_VBd6cd75ee-fb61c27a-part1"
+                ],
+                "sda2": [
+                    "ata-VBOX_HARDDISK_VBd6cd75ee-fb61c27a-part2"
+                ],
+                "sda3": [
+                    "ata-VBOX_HARDDISK_VBd6cd75ee-fb61c27a-part3"
+                ],
+                "sda4": [
+                    "ata-VBOX_HARDDISK_VBd6cd75ee-fb61c27a-part4"
+                ],
+                "sr0": [
+                    "ata-VBOX_CD-ROM_VB2-01700376"
+                ]
+            },
+            "labels": {},
+            "masters": {},
+            "uuids": {
+                "sda1": [
+                    "3b87d941-8ee7-4312-98fc-1f26828d62ab"
+                ],
+                "sda2": [
+                    "650c906b-5b09-453b-ac18-5b5cdfa453ac"
+                ],
+                "sda3": [
+                    "0678741e-d2a3-4fda-bc4e-e3ceb5d4d297"
+                ],
+                "sda4": [
+                    "8d9a49d0-79ba-4f7a-b31a-6d94b51e8045"
+                ]
+            }
+        },
+        "ansible_devices": {
+            "loop0": {
+                "holders": [],
+                "host": "",
+                "links": {
+                    "ids": [],
+                    "labels": [],
+                    "masters": [],
+                    "uuids": []
+                },
+                "model": null,
+                "partitions": {},
+                "removable": "0",
+                "rotational": "1",
+                "sas_address": null,
+                "sas_device_handle": null,
+                "scheduler_mode": "mq-deadline",
+                "sectors": "113592",
+                "sectorsize": "512",
+                "size": "55.46 MB",
+                "support_discard": "4096",
+                "vendor": null,
+                "virtual": 1
+            },
+            "loop1": {
+                "holders": [],
+                "host": "",
+                "links": {
+                    "ids": [],
+                    "labels": [],
+                    "masters": [],
+                    "uuids": []
+                },
+                "model": null,
+                "partitions": {},
+                "removable": "0",
+                "rotational": "1",
+                "sas_address": null,
+                "sas_device_handle": null,
+                "scheduler_mode": "mq-deadline",
+                "sectors": "113560",
+                "sectorsize": "512",
+                "size": "55.45 MB",
+                "support_discard": "4096",
+                "vendor": null,
+                "virtual": 1
+            },
+            "loop10": {
+                "holders": [],
+                "host": "",
+                "links": {
+                    "ids": [],
+                    "labels": [],
+                    "masters": [],
+                    "uuids": []
+                },
+                "model": null,
+                "partitions": {},
+                "removable": "0",
+                "rotational": "1",
+                "sas_address": null,
+                "sas_device_handle": null,
+                "scheduler_mode": "mq-deadline",
+                "sectors": "0",
+                "sectorsize": "512",
+                "size": "0.00 Bytes",
+                "support_discard": "4096",
+                "vendor": null,
+                "virtual": 1
+            },
+            "loop2": {
+                "holders": [],
+                "host": "",
+                "links": {
+                    "ids": [],
+                    "labels": [],
+                    "masters": [],
+                    "uuids": []
+                },
+                "model": null,
+                "partitions": {},
+                "removable": "0",
+                "rotational": "1",
+                "sas_address": null,
+                "sas_device_handle": null,
+                "scheduler_mode": "mq-deadline",
+                "sectors": "493152",
+                "sectorsize": "512",
+                "size": "240.80 MB",
+                "support_discard": "4096",
+                "vendor": null,
+                "virtual": 1
+            },
+            "loop3": {
+                "holders": [],
+                "host": "",
+                "links": {
+                    "ids": [],
+                    "labels": [],
+                    "masters": [],
+                    "uuids": []
+                },
+                "model": null,
+                "partitions": {},
+                "removable": "0",
+                "rotational": "1",
+                "sas_address": null,
+                "sas_device_handle": null,
+                "scheduler_mode": "mq-deadline",
+                "sectors": "448496",
+                "sectorsize": "512",
+                "size": "218.99 MB",
+                "support_discard": "4096",
+                "vendor": null,
+                "virtual": 1
+            },
+            "loop4": {
+                "holders": [],
+                "host": "",
+                "links": {
+                    "ids": [],
+                    "labels": [],
+                    "masters": [],
+                    "uuids": []
+                },
+                "model": null,
+                "partitions": {},
+                "removable": "0",
+                "rotational": "1",
+                "sas_address": null,
+                "sas_device_handle": null,
+                "scheduler_mode": "mq-deadline",
+                "sectors": "132648",
+                "sectorsize": "512",
+                "size": "64.77 MB",
+                "support_discard": "4096",
+                "vendor": null,
+                "virtual": 1
+            },
+            "loop5": {
+                "holders": [],
+                "host": "",
+                "links": {
+                    "ids": [],
+                    "labels": [],
+                    "masters": [],
+                    "uuids": []
+                },
+                "model": null,
+                "partitions": {},
+                "removable": "0",
+                "rotational": "1",
+                "sas_address": null,
+                "sas_device_handle": null,
+                "scheduler_mode": "mq-deadline",
+                "sectors": "133320",
+                "sectorsize": "512",
+                "size": "65.10 MB",
+                "support_discard": "4096",
+                "vendor": null,
+                "virtual": 1
+            },
+            "loop6": {
+                "holders": [],
+                "host": "",
+                "links": {
+                    "ids": [],
+                    "labels": [],
+                    "masters": [],
+                    "uuids": []
+                },
+                "model": null,
+                "partitions": {},
+                "removable": "0",
+                "rotational": "1",
+                "sas_address": null,
+                "sas_device_handle": null,
+                "scheduler_mode": "mq-deadline",
+                "sectors": "101960",
+                "sectorsize": "512",
+                "size": "49.79 MB",
+                "support_discard": "4096",
+                "vendor": null,
+                "virtual": 1
+            },
+            "loop7": {
+                "holders": [],
+                "host": "",
+                "links": {
+                    "ids": [],
+                    "labels": [],
+                    "masters": [],
+                    "uuids": []
+                },
+                "model": null,
+                "partitions": {},
+                "removable": "0",
+                "rotational": "1",
+                "sas_address": null,
+                "sas_device_handle": null,
+                "scheduler_mode": "mq-deadline",
+                "sectors": "104536",
+                "sectorsize": "512",
+                "size": "51.04 MB",
+                "support_discard": "4096",
+                "vendor": null,
+                "virtual": 1
+            },
+            "loop8": {
+                "holders": [],
+                "host": "",
+                "links": {
+                    "ids": [],
+                    "labels": [],
+                    "masters": [],
+                    "uuids": []
+                },
+                "model": null,
+                "partitions": {},
+                "removable": "0",
+                "rotational": "1",
+                "sas_address": null,
+                "sas_device_handle": null,
+                "scheduler_mode": "mq-deadline",
+                "sectors": "63664",
+                "sectorsize": "512",
+                "size": "31.09 MB",
+                "support_discard": "4096",
+                "vendor": null,
+                "virtual": 1
+            },
+            "loop9": {
+                "holders": [],
+                "host": "",
+                "links": {
+                    "ids": [],
+                    "labels": [],
+                    "masters": [],
+                    "uuids": []
+                },
+                "model": null,
+                "partitions": {},
+                "removable": "0",
+                "rotational": "1",
+                "sas_address": null,
+                "sas_device_handle": null,
+                "scheduler_mode": "mq-deadline",
+                "sectors": "66096",
+                "sectorsize": "512",
+                "size": "32.27 MB",
+                "support_discard": "4096",
+                "vendor": null,
+                "virtual": 1
+            },
+            "sda": {
+                "holders": [],
+                "host": "SATA controller: Intel Corporation 82801HM/HEM (ICH8M/ICH8M-E) SATA Controller [AHCI mode] (rev 02)",
+                "links": {
+                    "ids": [
+                        "ata-VBOX_HARDDISK_VBd6cd75ee-fb61c27a"
+                    ],
+                    "labels": [],
+                    "masters": [],
+                    "uuids": []
+                },
+                "model": "VBOX HARDDISK",
+                "partitions": {
+                    "sda1": {
+                        "holders": [],
+                        "links": {
+                            "ids": [
+                                "ata-VBOX_HARDDISK_VBd6cd75ee-fb61c27a-part1"
+                            ],
+                            "labels": [],
+                            "masters": [],
+                            "uuids": [
+                                "3b87d941-8ee7-4312-98fc-1f26828d62ab"
+                            ]
+                        },
+                        "sectors": "462637056",
+                        "sectorsize": 512,
+                        "size": "220.60 GB",
+                        "start": "2048",
+                        "uuid": "3b87d941-8ee7-4312-98fc-1f26828d62ab"
+                    },
+                    "sda2": {
+                        "holders": [],
+                        "links": {
+                            "ids": [
+                                "ata-VBOX_HARDDISK_VBd6cd75ee-fb61c27a-part2"
+                            ],
+                            "labels": [],
+                            "masters": [],
+                            "uuids": [
+                                "650c906b-5b09-453b-ac18-5b5cdfa453ac"
+                            ]
+                        },
+                        "sectors": "1953792",
+                        "sectorsize": 512,
+                        "size": "954.00 MB",
+                        "start": "462639104",
+                        "uuid": "650c906b-5b09-453b-ac18-5b5cdfa453ac"
+                    },
+                    "sda3": {
+                        "holders": [],
+                        "links": {
+                            "ids": [
+                                "ata-VBOX_HARDDISK_VBd6cd75ee-fb61c27a-part3"
+                            ],
+                            "labels": [],
+                            "masters": [],
+                            "uuids": [
+                                "0678741e-d2a3-4fda-bc4e-e3ceb5d4d297"
+                            ]
+                        },
+                        "sectors": "17575936",
+                        "sectorsize": 512,
+                        "size": "8.38 GB",
+                        "start": "464592896",
+                        "uuid": "0678741e-d2a3-4fda-bc4e-e3ceb5d4d297"
+                    },
+                    "sda4": {
+                        "holders": [],
+                        "links": {
+                            "ids": [
+                                "ata-VBOX_HARDDISK_VBd6cd75ee-fb61c27a-part4"
+                            ],
+                            "labels": [],
+                            "masters": [],
+                            "uuids": [
+                                "8d9a49d0-79ba-4f7a-b31a-6d94b51e8045"
+                            ]
+                        },
+                        "sectors": "566405120",
+                        "sectorsize": 512,
+                        "size": "270.08 GB",
+                        "start": "482168832",
+                        "uuid": "8d9a49d0-79ba-4f7a-b31a-6d94b51e8045"
+                    }
+                },
+                "removable": "0",
+                "rotational": "1",
+                "sas_address": null,
+                "sas_device_handle": null,
+                "scheduler_mode": "mq-deadline",
+                "sectors": "1048576000",
+                "sectorsize": "512",
+                "size": "500.00 GB",
+                "support_discard": "0",
+                "vendor": "ATA",
+                "virtual": 1
+            },
+            "sr0": {
+                "holders": [],
+                "host": "IDE interface: Intel Corporation 82371AB/EB/MB PIIX4 IDE (rev 01)",
+                "links": {
+                    "ids": [
+                        "ata-VBOX_CD-ROM_VB2-01700376"
+                    ],
+                    "labels": [],
+                    "masters": [],
+                    "uuids": []
+                },
+                "model": "CD-ROM",
+                "partitions": {},
+                "removable": "1",
+                "rotational": "1",
+                "sas_address": null,
+                "sas_device_handle": null,
+                "scheduler_mode": "mq-deadline",
+                "sectors": "2097151",
+                "sectorsize": "512",
+                "size": "1024.00 MB",
+                "support_discard": "0",
+                "vendor": "VBOX",
+                "virtual": 1
+            }
+        },
+        "ansible_distribution": "Ubuntu",
+        "ansible_distribution_file_parsed": true,
+        "ansible_distribution_file_path": "/etc/os-release",
+        "ansible_distribution_file_variety": "Debian",
+        "ansible_distribution_major_version": "20",
+        "ansible_distribution_release": "focal",
+        "ansible_distribution_version": "20.04",
+        "ansible_dns": {
+            "nameservers": [
+                "127.0.0.53"
+            ],
+            "options": {
+                "edns0": true
+            },
+            "search": [
+                "homerouter.cpe"
+            ]
+        },
+        "ansible_domain": "",
+        "ansible_effective_group_id": 1000,
+        "ansible_effective_user_id": 1000,
+        "ansible_enp0s3": {
+            "active": true,
+            "device": "enp0s3",
+            "features": {
+                "esp_hw_offload": "off [fixed]",
+                "esp_tx_csum_hw_offload": "off [fixed]",
+                "fcoe_mtu": "off [fixed]",
+                "generic_receive_offload": "on",
+                "generic_segmentation_offload": "on",
+                "highdma": "off [fixed]",
+                "hw_tc_offload": "off [fixed]",
+                "l2_fwd_offload": "off [fixed]",
+                "large_receive_offload": "off [fixed]",
+                "loopback": "off [fixed]",
+                "netns_local": "off [fixed]",
+                "ntuple_filters": "off [fixed]",
+                "receive_hashing": "off [fixed]",
+                "rx_all": "off",
+                "rx_checksumming": "off",
+                "rx_fcs": "off",
+                "rx_gro_hw": "off [fixed]",
+                "rx_udp_tunnel_port_offload": "off [fixed]",
+                "rx_vlan_filter": "on [fixed]",
+                "rx_vlan_offload": "on",
+                "rx_vlan_stag_filter": "off [fixed]",
+                "rx_vlan_stag_hw_parse": "off [fixed]",
+                "scatter_gather": "on",
+                "tcp_segmentation_offload": "on",
+                "tls_hw_record": "off [fixed]",
+                "tls_hw_rx_offload": "off [fixed]",
+                "tls_hw_tx_offload": "off [fixed]",
+                "tx_checksum_fcoe_crc": "off [fixed]",
+                "tx_checksum_ip_generic": "on",
+                "tx_checksum_ipv4": "off [fixed]",
+                "tx_checksum_ipv6": "off [fixed]",
+                "tx_checksum_sctp": "off [fixed]",
+                "tx_checksumming": "on",
+                "tx_esp_segmentation": "off [fixed]",
+                "tx_fcoe_segmentation": "off [fixed]",
+                "tx_gre_csum_segmentation": "off [fixed]",
+                "tx_gre_segmentation": "off [fixed]",
+                "tx_gso_partial": "off [fixed]",
+                "tx_gso_robust": "off [fixed]",
+                "tx_ipxip4_segmentation": "off [fixed]",
+                "tx_ipxip6_segmentation": "off [fixed]",
+                "tx_lockless": "off [fixed]",
+                "tx_nocache_copy": "off",
+                "tx_scatter_gather": "on",
+                "tx_scatter_gather_fraglist": "off [fixed]",
+                "tx_sctp_segmentation": "off [fixed]",
+                "tx_tcp6_segmentation": "off [fixed]",
+                "tx_tcp_ecn_segmentation": "off [fixed]",
+                "tx_tcp_mangleid_segmentation": "off",
+                "tx_tcp_segmentation": "on",
+                "tx_udp_segmentation": "off [fixed]",
+                "tx_udp_tnl_csum_segmentation": "off [fixed]",
+                "tx_udp_tnl_segmentation": "off [fixed]",
+                "tx_vlan_offload": "on [fixed]",
+                "tx_vlan_stag_hw_insert": "off [fixed]",
+                "vlan_challenged": "off [fixed]"
+            },
+            "hw_timestamp_filters": [],
+            "ipv6": [
+                {
+                    "address": "fe80::2ef6:4817:b8ab:d042",
+                    "prefix": "64",
+                    "scope": "link"
+                }
+            ],
+            "macaddress": "08:00:27:c4:9f:b4",
+            "module": "e1000",
+            "mtu": 1500,
+            "pciid": "0000:00:03.0",
+            "promisc": false,
+            "speed": 1000,
+            "timestamping": [
+                "tx_software",
+                "rx_software",
+                "software"
+            ],
+            "type": "ether"
+        },
+        "ansible_enp0s8": {
+            "active": true,
+            "device": "enp0s8",
+            "features": {
+                "esp_hw_offload": "off [fixed]",
+                "esp_tx_csum_hw_offload": "off [fixed]",
+                "fcoe_mtu": "off [fixed]",
+                "generic_receive_offload": "on",
+                "generic_segmentation_offload": "on",
+                "highdma": "off [fixed]",
+                "hw_tc_offload": "off [fixed]",
+                "l2_fwd_offload": "off [fixed]",
+                "large_receive_offload": "off [fixed]",
+                "loopback": "off [fixed]",
+                "netns_local": "off [fixed]",
+                "ntuple_filters": "off [fixed]",
+                "receive_hashing": "off [fixed]",
+                "rx_all": "off",
+                "rx_checksumming": "off",
+                "rx_fcs": "off",
+                "rx_gro_hw": "off [fixed]",
+                "rx_udp_tunnel_port_offload": "off [fixed]",
+                "rx_vlan_filter": "on [fixed]",
+                "rx_vlan_offload": "on",
+                "rx_vlan_stag_filter": "off [fixed]",
+                "rx_vlan_stag_hw_parse": "off [fixed]",
+                "scatter_gather": "on",
+                "tcp_segmentation_offload": "on",
+                "tls_hw_record": "off [fixed]",
+                "tls_hw_rx_offload": "off [fixed]",
+                "tls_hw_tx_offload": "off [fixed]",
+                "tx_checksum_fcoe_crc": "off [fixed]",
+                "tx_checksum_ip_generic": "on",
+                "tx_checksum_ipv4": "off [fixed]",
+                "tx_checksum_ipv6": "off [fixed]",
+                "tx_checksum_sctp": "off [fixed]",
+                "tx_checksumming": "on",
+                "tx_esp_segmentation": "off [fixed]",
+                "tx_fcoe_segmentation": "off [fixed]",
+                "tx_gre_csum_segmentation": "off [fixed]",
+                "tx_gre_segmentation": "off [fixed]",
+                "tx_gso_partial": "off [fixed]",
+                "tx_gso_robust": "off [fixed]",
+                "tx_ipxip4_segmentation": "off [fixed]",
+                "tx_ipxip6_segmentation": "off [fixed]",
+                "tx_lockless": "off [fixed]",
+                "tx_nocache_copy": "off",
+                "tx_scatter_gather": "on",
+                "tx_scatter_gather_fraglist": "off [fixed]",
+                "tx_sctp_segmentation": "off [fixed]",
+                "tx_tcp6_segmentation": "off [fixed]",
+                "tx_tcp_ecn_segmentation": "off [fixed]",
+                "tx_tcp_mangleid_segmentation": "off",
+                "tx_tcp_segmentation": "on",
+                "tx_udp_segmentation": "off [fixed]",
+                "tx_udp_tnl_csum_segmentation": "off [fixed]",
+                "tx_udp_tnl_segmentation": "off [fixed]",
+                "tx_vlan_offload": "on [fixed]",
+                "tx_vlan_stag_hw_insert": "off [fixed]",
+                "vlan_challenged": "off [fixed]"
+            },
+            "hw_timestamp_filters": [],
+            "ipv4": {
+                "address": "192.168.8.100",
+                "broadcast": "192.168.8.255",
+                "netmask": "255.255.255.0",
+                "network": "192.168.8.0"
+            },
+            "ipv6": [
+                {
+                    "address": "fe80::5482:eb4a:c2ee:92e",
+                    "prefix": "64",
+                    "scope": "link"
+                }
+            ],
+            "macaddress": "08:00:27:c7:21:b3",
+            "module": "e1000",
+            "mtu": 1500,
+            "pciid": "0000:00:08.0",
+            "promisc": false,
+            "speed": 1000,
+            "timestamping": [
+                "tx_software",
+                "rx_software",
+                "software"
+            ],
+            "type": "ether"
+        },
+        "ansible_env": {
+            "DBUS_SESSION_BUS_ADDRESS": "unix:path=/run/user/1000/bus",
+            "HOME": "/home/osboxes",
+            "LANG": "en_US.UTF-8",
+            "LOGNAME": "osboxes",
+            "MOTD_SHOWN": "pam",
+            "PATH": "/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games",
+            "PWD": "/home/osboxes",
+            "SHELL": "/bin/bash",
+            "SHLVL": "0",
+            "SSH_CLIENT": "192.168.8.102 60826 22",
+            "SSH_CONNECTION": "192.168.8.102 60826 192.168.8.100 22",
+            "USER": "osboxes",
+            "XDG_RUNTIME_DIR": "/run/user/1000",
+            "XDG_SESSION_CLASS": "user",
+            "XDG_SESSION_ID": "528",
+            "XDG_SESSION_TYPE": "tty",
+            "_": "/bin/sh"
+        },
+        "ansible_fibre_channel_wwn": [],
+        "ansible_fips": false,
+        "ansible_form_factor": "Other",
+        "ansible_fqdn": "osboxes",
+        "ansible_hostname": "osboxes",
+        "ansible_hostnqn": "",
+        "ansible_interfaces": [
+            "lo",
+            "enp0s8",
+            "enp0s3"
+        ],
+        "ansible_is_chroot": false,
+        "ansible_iscsi_iqn": "",
+        "ansible_kernel": "5.4.0-26-generic",
+        "ansible_kernel_version": "#30-Ubuntu SMP Mon Apr 20 16:58:30 UTC 2020",
+        "ansible_lo": {
+            "active": true,
+            "device": "lo",
+            "features": {
+                "esp_hw_offload": "off [fixed]",
+                "esp_tx_csum_hw_offload": "off [fixed]",
+                "fcoe_mtu": "off [fixed]",
+                "generic_receive_offload": "on",
+                "generic_segmentation_offload": "on",
+                "highdma": "on [fixed]",
+                "hw_tc_offload": "off [fixed]",
+                "l2_fwd_offload": "off [fixed]",
+                "large_receive_offload": "off [fixed]",
+                "loopback": "on [fixed]",
+                "netns_local": "on [fixed]",
+                "ntuple_filters": "off [fixed]",
+                "receive_hashing": "off [fixed]",
+                "rx_all": "off [fixed]",
+                "rx_checksumming": "on [fixed]",
+                "rx_fcs": "off [fixed]",
+                "rx_gro_hw": "off [fixed]",
+                "rx_udp_tunnel_port_offload": "off [fixed]",
+                "rx_vlan_filter": "off [fixed]",
+                "rx_vlan_offload": "off [fixed]",
+                "rx_vlan_stag_filter": "off [fixed]",
+                "rx_vlan_stag_hw_parse": "off [fixed]",
+                "scatter_gather": "on",
+                "tcp_segmentation_offload": "on",
+                "tls_hw_record": "off [fixed]",
+                "tls_hw_rx_offload": "off [fixed]",
+                "tls_hw_tx_offload": "off [fixed]",
+                "tx_checksum_fcoe_crc": "off [fixed]",
+                "tx_checksum_ip_generic": "on [fixed]",
+                "tx_checksum_ipv4": "off [fixed]",
+                "tx_checksum_ipv6": "off [fixed]",
+                "tx_checksum_sctp": "on [fixed]",
+                "tx_checksumming": "on",
+                "tx_esp_segmentation": "off [fixed]",
+                "tx_fcoe_segmentation": "off [fixed]",
+                "tx_gre_csum_segmentation": "off [fixed]",
+                "tx_gre_segmentation": "off [fixed]",
+                "tx_gso_partial": "off [fixed]",
+                "tx_gso_robust": "off [fixed]",
+                "tx_ipxip4_segmentation": "off [fixed]",
+                "tx_ipxip6_segmentation": "off [fixed]",
+                "tx_lockless": "on [fixed]",
+                "tx_nocache_copy": "off [fixed]",
+                "tx_scatter_gather": "on [fixed]",
+                "tx_scatter_gather_fraglist": "on [fixed]",
+                "tx_sctp_segmentation": "on",
+                "tx_tcp6_segmentation": "on",
+                "tx_tcp_ecn_segmentation": "on",
+                "tx_tcp_mangleid_segmentation": "on",
+                "tx_tcp_segmentation": "on",
+                "tx_udp_segmentation": "off [fixed]",
+                "tx_udp_tnl_csum_segmentation": "off [fixed]",
+                "tx_udp_tnl_segmentation": "off [fixed]",
+                "tx_vlan_offload": "off [fixed]",
+                "tx_vlan_stag_hw_insert": "off [fixed]",
+                "vlan_challenged": "on [fixed]"
+            },
+            "hw_timestamp_filters": [],
+            "ipv4": {
+                "address": "127.0.0.1",
+                "broadcast": "host",
+                "netmask": "255.0.0.0",
+                "network": "127.0.0.0"
+            },
+            "ipv6": [
+                {
+                    "address": "::1",
+                    "prefix": "128",
+                    "scope": "host"
+                }
+            ],
+            "mtu": 65536,
+            "promisc": false,
+            "timestamping": [
+                "tx_software",
+                "rx_software",
+                "software"
+            ],
+            "type": "loopback"
+        },
+        "ansible_local": {},
+        "ansible_lsb": {
+            "codename": "focal",
+            "description": "Ubuntu 20.04 LTS",
+            "id": "Ubuntu",
+            "major_release": "20",
+            "release": "20.04"
+        },
+        "ansible_machine": "x86_64",
+        "ansible_machine_id": "c319ab13fdd74f3c9b3dd93fd2549ddf",
+        "ansible_memfree_mb": 74,
+        "ansible_memory_mb": {
+            "nocache": {
+                "free": 547,
+                "used": 434
+            },
+            "real": {
+                "free": 74,
+                "total": 981,
+                "used": 907
+            },
+            "swap": {
+                "cached": 30,
+                "free": 7831,
+                "total": 8581,
+                "used": 750
+            }
+        },
+        "ansible_memtotal_mb": 981,
+        "ansible_mounts": [
+            {
+                "block_available": 51659358,
+                "block_size": 4096,
+                "block_total": 56659843,
+                "block_used": 5000485,
+                "device": "/dev/sda1",
+                "fstype": "ext4",
+                "inode_available": 14219462,
+                "inode_total": 14458880,
+                "inode_used": 239418,
+                "mount": "/",
+                "options": "rw,relatime,errors=remount-ro",
+                "size_available": 211596730368,
+                "size_total": 232078716928,
+                "uuid": "3b87d941-8ee7-4312-98fc-1f26828d62ab"
+            },
+            {
+                "block_available": 0,
+                "block_size": 131072,
+                "block_total": 444,
+                "block_used": 444,
+                "device": "/dev/loop0",
+                "fstype": "squashfs",
+                "inode_available": 0,
+                "inode_total": 10817,
+                "inode_used": 10817,
+                "mount": "/snap/core18/1988",
+                "options": "ro,nodev,relatime",
+                "size_available": 0,
+                "size_total": 58195968,
+                "uuid": "N/A"
+            },
+            {
+                "block_available": 0,
+                "block_size": 131072,
+                "block_total": 444,
+                "block_used": 444,
+                "device": "/dev/loop1",
+                "fstype": "squashfs",
+                "inode_available": 0,
+                "inode_total": 10790,
+                "inode_used": 10790,
+                "mount": "/snap/core18/1997",
+                "options": "ro,nodev,relatime",
+                "size_available": 0,
+                "size_total": 58195968,
+                "uuid": "N/A"
+            },
+            {
+                "block_available": 0,
+                "block_size": 131072,
+                "block_total": 1927,
+                "block_used": 1927,
+                "device": "/dev/loop2",
+                "fstype": "squashfs",
+                "inode_available": 0,
+                "inode_total": 25913,
+                "inode_used": 25913,
+                "mount": "/snap/gnome-3-34-1804/24",
+                "options": "ro,nodev,relatime",
+                "size_available": 0,
+                "size_total": 252575744,
+                "uuid": "N/A"
+            },
+            {
+                "block_available": 0,
+                "block_size": 131072,
+                "block_total": 1752,
+                "block_used": 1752,
+                "device": "/dev/loop3",
+                "fstype": "squashfs",
+                "inode_available": 0,
+                "inode_total": 18508,
+                "inode_used": 18508,
+                "mount": "/snap/gnome-3-34-1804/66",
+                "options": "ro,nodev,relatime",
+                "size_available": 0,
+                "size_total": 229638144,
+                "uuid": "N/A"
+            },
+            {
+                "block_available": 0,
+                "block_size": 131072,
+                "block_total": 519,
+                "block_used": 519,
+                "device": "/dev/loop4",
+                "fstype": "squashfs",
+                "inode_available": 0,
+                "inode_total": 63978,
+                "inode_used": 63978,
+                "mount": "/snap/gtk-common-themes/1514",
+                "options": "ro,nodev,relatime",
+                "size_available": 0,
+                "size_total": 68026368,
+                "uuid": "N/A"
+            },
+            {
+                "block_available": 0,
+                "block_size": 131072,
+                "block_total": 521,
+                "block_used": 521,
+                "device": "/dev/loop5",
+                "fstype": "squashfs",
+                "inode_available": 0,
+                "inode_total": 64986,
+                "inode_used": 64986,
+                "mount": "/snap/gtk-common-themes/1515",
+                "options": "ro,nodev,relatime",
+                "size_available": 0,
+                "size_total": 68288512,
+                "uuid": "N/A"
+            },
+            {
+                "block_available": 0,
+                "block_size": 131072,
+                "block_total": 399,
+                "block_used": 399,
+                "device": "/dev/loop6",
+                "fstype": "squashfs",
+                "inode_available": 0,
+                "inode_total": 15827,
+                "inode_used": 15827,
+                "mount": "/snap/snap-store/433",
+                "options": "ro,nodev,relatime",
+                "size_available": 0,
+                "size_total": 52297728,
+                "uuid": "N/A"
+            },
+            {
+                "block_available": 0,
+                "block_size": 131072,
+                "block_total": 409,
+                "block_used": 409,
+                "device": "/dev/loop7",
+                "fstype": "squashfs",
+                "inode_available": 0,
+                "inode_total": 15847,
+                "inode_used": 15847,
+                "mount": "/snap/snap-store/518",
+                "options": "ro,nodev,relatime",
+                "size_available": 0,
+                "size_total": 53608448,
+                "uuid": "N/A"
+            },
+            {
+                "block_available": 0,
+                "block_size": 131072,
+                "block_total": 249,
+                "block_used": 249,
+                "device": "/dev/loop8",
+                "fstype": "squashfs",
+                "inode_available": 0,
+                "inode_total": 470,
+                "inode_used": 470,
+                "mount": "/snap/snapd/11036",
+                "options": "ro,nodev,relatime",
+                "size_available": 0,
+                "size_total": 32636928,
+                "uuid": "N/A"
+            },
+            {
+                "block_available": 0,
+                "block_size": 131072,
+                "block_total": 259,
+                "block_used": 259,
+                "device": "/dev/loop9",
+                "fstype": "squashfs",
+                "inode_available": 0,
+                "inode_total": 474,
+                "inode_used": 474,
+                "mount": "/snap/snapd/11588",
+                "options": "ro,nodev,relatime",
+                "size_available": 0,
+                "size_total": 33947648,
+                "uuid": "N/A"
+            },
+            {
+                "block_available": 184810,
+                "block_size": 4096,
+                "block_total": 236286,
+                "block_used": 51476,
+                "device": "/dev/sda2",
+                "fstype": "ext4",
+                "inode_available": 60737,
+                "inode_total": 61056,
+                "inode_used": 319,
+                "mount": "/boot",
+                "options": "rw,relatime",
+                "size_available": 756981760,
+                "size_total": 967827456,
+                "uuid": "650c906b-5b09-453b-ac18-5b5cdfa453ac"
+            },
+            {
+                "block_available": 65836747,
+                "block_size": 4096,
+                "block_total": 69427217,
+                "block_used": 3590470,
+                "device": "/dev/sda4",
+                "fstype": "ext4",
+                "inode_available": 17699515,
+                "inode_total": 17702912,
+                "inode_used": 3397,
+                "mount": "/home",
+                "options": "rw,relatime",
+                "size_available": 269667315712,
+                "size_total": 284373880832,
+                "uuid": "8d9a49d0-79ba-4f7a-b31a-6d94b51e8045"
+            },
+            {
+                "block_available": 0,
+                "block_size": 512,
+                "block_total": 0,
+                "block_used": 0,
+                "device": "/dev/fuse",
+                "fstype": "fuse",
+                "inode_available": 0,
+                "inode_total": 0,
+                "inode_used": 0,
+                "mount": "/run/user/1000/doc",
+                "options": "rw,nosuid,nodev,relatime,user_id=1000,group_id=1000",
+                "size_available": 0,
+                "size_total": 0,
+                "uuid": "N/A"
+            }
+        ],
+        "ansible_nodename": "osboxes",
+        "ansible_os_family": "Debian",
+        "ansible_pkg_mgr": "apt",
+        "ansible_proc_cmdline": {
+            "BOOT_IMAGE": "/vmlinuz-5.4.0-26-generic",
+            "quiet": true,
+            "ro": true,
+            "root": "UUID=3b87d941-8ee7-4312-98fc-1f26828d62ab",
+            "splash": true
+        },
+        "ansible_processor": [
+            "0",
+            "GenuineIntel",
+            "Intel(R) Core(TM) i7-6500U CPU @ 2.50GHz"
+        ],
+        "ansible_processor_cores": 1,
+        "ansible_processor_count": 1,
+        "ansible_processor_threads_per_core": 1,
+        "ansible_processor_vcpus": 1,
+        "ansible_product_name": "VirtualBox",
+        "ansible_product_serial": "NA",
+        "ansible_product_uuid": "NA",
+        "ansible_product_version": "1.2",
+        "ansible_python": {
+            "executable": "/usr/bin/python3",
+            "has_sslcontext": true,
+            "type": "cpython",
+            "version": {
+                "major": 3,
+                "micro": 5,
+                "minor": 8,
+                "releaselevel": "final",
+                "serial": 0
+            },
+            "version_info": [
+                3,
+                8,
+                5,
+                "final",
+                0
+            ]
+        },
+        "ansible_python_version": "3.8.5",
+        "ansible_real_group_id": 1000,
+        "ansible_real_user_id": 1000,
+        "ansible_selinux": {
+            "status": "Missing selinux Python library"
+        },
+        "ansible_selinux_python_present": false,
+        "ansible_service_mgr": "systemd",
+        "ansible_ssh_host_key_ecdsa_public": "AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBL1BzNK2UiKO5Ev2Lh89Ap+Y1mK1i5gLy6eBDHsbiWRtLNmFErEKGIIlGocN5daWCOWBsMVaC8kg5KnzMqk8T1w=",
+        "ansible_ssh_host_key_ed25519_public": "AAAAC3NzaC1lZDI1NTE5AAAAIGRecv8ZoWLHkV/xH6SOr8nHZz1yvGB23JbuyrtRXJzq",
+        "ansible_ssh_host_key_rsa_public": "AAAAB3NzaC1yc2EAAAADAQABAAABgQCiGvet+z2Pw9x3zrFSOMEadtXNXOr+H544msOHREXPqf6r6eV5r2lZTcyjEJVD4EkgpbUrWPFFAjwWscx7xKsjKOcA9SVX9G2bNCaxNcYWHTbGQ90tdSSpzcuwMsJ+9bcE0EHVnJIqINqfZPNwOSoDHtxEBEJrNlfsymzsnKpdeOWbsrCOgeKoP4eG9Vf4jET5WdJvbWkIuhAyh5x2UJRGBEpHIcPI+HN4uMHSR0vilsajhk0ZWEmLM2RmKsRt/+D9KEB3WOGRHmndw1yQRH7i8L5nSLbJvph0CRJugXNKPjbmZ0AVnKTm+N/iCmAO5MjyfAIvyHq55PyEP+0KFrXKIyTq9TdB+zkpwEgdXH5ujU91hv9vHM5Yej0eZNLYGHTqAPKJlybtEeEmD/Xp7HjAzUQjFyt42vxzwQt1q5Vrs14SipB+2I1Wekr/BsiBuTLHZBMmf5ALLDADsWo6in4/HJgVt54hiF/WPX66KGyDZ87PdU3WFjFLw0kdW0DnLYk=",
+        "ansible_swapfree_mb": 7831,
+        "ansible_swaptotal_mb": 8581,
+        "ansible_system": "Linux",
+        "ansible_system_capabilities": [
+            ""
+        ],
+        "ansible_system_capabilities_enforced": "True",
+        "ansible_system_vendor": "innotek GmbH",
+        "ansible_uptime_seconds": 13486,
+        "ansible_user_dir": "/home/osboxes",
+        "ansible_user_gecos": "osboxes.org,,,",
+        "ansible_user_gid": 1000,
+        "ansible_user_id": "osboxes",
+        "ansible_user_shell": "/bin/bash",
+        "ansible_user_uid": 1000,
+        "ansible_userspace_architecture": "x86_64",
+        "ansible_userspace_bits": "64",
+        "ansible_virtualization_role": "guest",
+        "ansible_virtualization_type": "virtualbox",
+        "discovered_interpreter_python": "/usr/bin/python3",
+        "gather_subset": [
+            "all"
+        ],
+        "module_setup": true
+    },
+    "changed": false
+}

@@ -1,0 +1,46 @@
+- name: write the apache2 ports.conf config file
+  template:
+    src: templates/ports.conf.j2
+    dest: /etc/apache2/ports.conf
+  notify: restart apache
+  tags: configuration
+
+- name: write a basic index.html file
+  template:
+    src: templates/index.html.j2
+    dest: /var/www/html/index.html
+  notify:
+    - restart apache
+  tags: configuration
+
+- name: "copy sites-available/*.conf config file"
+  copy:
+    src: /etc/apache2/sites-available/foodres.conf
+    dest: /etc/apache2/sites-available/foodres.conf
+        
+  
+# prod routines
+- name: a2dissite foodres* sites
+  command: a2dissite *foodres*
+  ignore_errors: yes
+- name: delete foodres.org*.conf files
+  file:
+    state: absent
+    path: "/etc/apache2/sites-available/foodres*.conf"
+- name: replace foodres.localhost with foodres.org
+  shell: sed -i 's+foodres.localhost+foodres.org+g' /etc/apache2/sites-available/*foodres.conf
+  args:
+    warn: false
+
+
+# Apache Server routine
+- name: Enable rewrite module
+  command: a2enmod rewrite
+
+- name: a2ensite home,app,docs
+  command: a2ensite foodres.conf
+
+- name: reload apache
+  service:
+    name: apache2
+    state: reloaded

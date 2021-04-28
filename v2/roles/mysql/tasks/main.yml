@@ -1,0 +1,6 @@
+---
+# tasks file for roles/mysql
+- include: install.yml
+- include: setup.yml
+- include: migrate.yml
+- include: backup.yml

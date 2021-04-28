@@ -1,0 +1,17 @@
+---
+# handlers file for roles/redis
+
+- name: restart redis
+  service:
+    name: redis
+    state: restarted
+
+- name: start redis
+  service:
+    name: redis
+    state: started
+
+- name: restart apache
+  service:
+    name: apache2
+    state: restarted

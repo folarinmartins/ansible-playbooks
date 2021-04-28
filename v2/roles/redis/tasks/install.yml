@@ -1,0 +1,14 @@
+- name: install  php7.4-redis
+  package:
+    name: php7.4-redis
+    state: present
+  notify:
+    - restart apache
+    
+- name: install redis-server
+  package:
+    name: redis-server
+    state: present
+  notify:
+    - restart redis
+    

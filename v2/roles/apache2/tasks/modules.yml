@@ -1,0 +1,46 @@
+- name: "Install pip"
+  package:
+    name: python3-pip
+    state: present
+    
+- name: Install apache2-php
+  package:
+    name: libapache2-mod-php
+    state: present
+    
+- name: Install php-cli
+  package:
+    name: php7.4-cli
+    state: present
+    
+- name: Install php-mcrypt
+  package:
+    name: mcrypt
+    state: present
+    
+- name: Install php-gd
+  package:
+    name: php7.4-gd
+    state: present
+    
+- name: add-apt-repository ppa:ondrej/php
+  apt_repository:
+    repo: ppa:ondrej/php
+    state: present
+    update_cache: yes
+    
+- name: install bc-math
+  package:
+    name: php7.4-bcmath
+    state: present
+    
+- name: install curl
+  package:
+    name: php7.4-curl
+    state: present
+
+
+- name: restart apache
+  service:
+    name: apache2
+    state: restarted

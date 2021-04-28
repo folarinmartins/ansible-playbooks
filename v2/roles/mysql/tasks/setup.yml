@@ -1,0 +1,27 @@
+- name: Create my.cnf configuration file
+  template: 
+    src: templates/my.cnf.j2
+    dest: /etc/mysql/conf.d/mysql.cnf
+  notify: restart mysql
+
+- name: Create database user with name 'mysql_dba' and password 'xxx' with all database privileges
+  mysql_user:
+    login_user: root
+    login_password: enter_root_password_here
+    name: mysql_dba
+    password: enter_password_here
+    priv: "*.*:ALL,GRANT"
+    state: present
+  tags:
+    - mysql
+    - db
+
+- name: Create a new database with name 'foodres'
+  mysql_db:
+    login_user: mysql_dba
+    login_password: enter_password_here
+    name: foodreso_eav_dev
+    state: present
+  tags: mysqldb
+  
+

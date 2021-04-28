@@ -1,0 +1,28 @@
+- name: create mysql dump file
+  command: /usr/bin/mysqldump -u {{ db_root_user }} --password={{ db_root_password }} {{ db_name }} > dump.sql
+
+# OR
+
+- name: create a remote backup
+  mysql_db:
+    name: foodreso_eav_dev
+    state: dump
+    target: dump.sql
+    login_host: localhost
+    login_user: mysql_dba
+    login_password: enter_password_here
+  delegate_to: localhost
+
+# Copy database dump file to remote host and restore it to database 'my_db'
+- name: Copy database dump file
+  copy:
+    src: dump.sql
+    dest: /tmp
+
+- name: Restore database
+  mysql_db:
+    login_user: mysql_dba
+    login_password: enter_password_here
+    name: foodreso_eav_dev
+    state: import
+    target: /tmp/dump.sql
