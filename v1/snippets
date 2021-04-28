@@ -23,3 +23,6 @@ ansible test --become -kK -u osboxes -i hosts -m service -a "name=mysql state=st
 
 
 ANSIBLE PLAYBOOK
+
+#run a playbook
+ansible-playbook -K orchestration.yml 
