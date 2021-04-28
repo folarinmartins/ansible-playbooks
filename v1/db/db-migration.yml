@@ -1,0 +1,49 @@
+---
+- name: Orchestrating platform environment
+  hosts: fdr-prod
+  # remote_user: root
+  become: true
+  become_user: root
+  gather_facts: yes
+  tasks:
+    - name: Create database user with name 'mysql_dba' and password 'xxx' with all database privileges
+      mysql_user:
+        login_user: root
+        login_password: enter_root_password_here
+        name: mysql_dba
+        password: enter_password_here
+        priv: "*.*:ALL,GRANT"
+        state: present
+
+    - name: Create a new database with name 'foodres'
+      mysql_db:
+        login_user: mysql_dba
+        login_password: enter_password_here
+        name: foodreso_eav_dev
+        state: present
+    # Copy database dump file to remote host and restore it to database 'my_db'
+    - name: Copy database dump file
+      copy:
+        src: dump.sql
+        dest: /tmp
+
+    - name: Restore database
+      mysql_db:
+        login_user: mysql_dba
+        login_password: enter_password_here
+        name: foodreso_eav_dev
+        state: import
+        target: /tmp/dump.sql
+
+    - name: create a remote backup
+      mysql_db:
+        name: foodreso_eav_dev
+        state: dump
+        target: /var/www/foodres.org/storage/logs/backup.sql
+        login_host: localhost
+        login_user: mysql_dba
+        login_password: enter_password_here
+
+    - name: copy the database to the development server
+      raw: rsync /var/www/foodres.org/storage/logs/backup.sql user@197.210.226.57:/home/user/code/foodres/storage/logs/
+      ignore_errors: yes

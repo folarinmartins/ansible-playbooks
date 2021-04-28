@@ -1,0 +1,25 @@
+ANSIBLE ad-hoc commands
+
+# to test your connection to the 'test' group of servers
+ansible control -i hosts -u folarin -k -m command -a date
+
+#install a module as root on a node
+ansible control -k --become  -K -i hosts -m command -a 'sudo apt install python-simplejson'
+
+ansible test --become -k -K -i hosts -m apt -a "name=python-simplejson state=present"
+
+#run command as root on test group, using ssh user osboxes
+ansible test --become -u osboxes -K -i hosts -m command -a 'sudo apt install python-simplejson'
+
+#install package as root on test group using ssh user osboxes with apt module
+ansible test --become -kK -u osboxes -i hosts -m apt -a "name=python-simplejson state=present"
+
+#start a service
+ansible test --become -kK -u osboxes -i hosts -m service -a "name=mysql state=started"
+
+#restart a service
+ansible test --become -kK -u osboxes -i hosts -m service -a "name=mysql state=started"
+
+
+
+ANSIBLE PLAYBOOK

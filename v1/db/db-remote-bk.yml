@@ -1,0 +1,29 @@
+---
+- name: Retrieve DB dump from remote host
+  hosts: test
+  become: true
+  become_user: root
+  gather_facts: true
+  tasks:
+    - name: create a remote backup
+      mysql_db:
+        name: blockstale
+        state: dump
+        target: /tmp/dump.sql
+        login_host: localhost
+        login_user: mysql_dba
+        login_password: enter_password_here
+
+    - name: copy the database to the development server
+      command: rsync -azP userone@165.227.134.194:/var/www/bst/app/storage/logs/ /home/folarin/code/bst/app/storage/logs/
+      ignore_errors: yes
+      delegate_to: 127.0.0.1
+
+    - name: Restore database
+      mysql_db:
+        login_user: mysql_dba
+        login_password: enter_password_here
+        name: blockstale
+        state: import
+        target: /home/folarin/code/bst/app/storage/logs/dump.sql
+      delegate_to: 127.0.0.1

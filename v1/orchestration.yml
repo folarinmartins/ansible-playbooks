@@ -1,0 +1,61 @@
+---
+- name: Orchestrating platform environment
+  hosts: fdr-prod
+  become: true
+  become_user: root
+  gather_facts: yes
+  tasks:
+    - name: "copy sites-available/*.conf config file"
+      copy:
+        src: /etc/apache2/sites-available/mysite.conf
+        dest: /etc/apache2/sites-available/mysite.conf
+
+    # Symlinks
+    - name: sym-linking app
+      command: ln -fs /var/www/mysite.org/public /var/www/mysite
+
+    # folder permissions
+    - name: make app folder usable - 0755
+      file:
+        dest: /var/www/
+        state: directory
+        owner: www-data
+        group: www-data
+        mode: 0755
+    - name: make storage folder writable
+      command: chmod -R a+rw /var/www/mysite.org/storage
+
+    - name: replace /home/folarin/code/bst with /var/www/bst/
+      shell: sed -i 's+/home/folarin/code/mysite/+/var/www/mysite.org/+g' /etc/apache2/sites-available/*mysite.conf
+      args:
+        warn: false
+
+    # prod routines
+    - name: a2dissite mysite* sites
+      command: a2dissite *mysite*
+      ignore_errors: yes
+    - name: delete mysite.org*.conf files
+      file:
+        state: absent
+        path: "/etc/apache2/sites-available/mysite*.conf"
+    - name: replace mysite.localhost with mysite.org
+      shell: sed -i 's+mysite.localhost+mysite.org+g' /etc/apache2/sites-available/*mysite.conf
+      args:
+        warn: false
+
+    # Apache Server routine
+    - name: Enable rewrite module
+      command: a2enmod rewrite
+
+    - name: a2ensite home,app,docs
+      command: a2ensite mysite.conf
+
+    - name: restart redis service
+      service:
+        name: redis
+        state: restarted
+
+    - name: reload apache
+      service:
+        name: apache2
+        state: reloaded
